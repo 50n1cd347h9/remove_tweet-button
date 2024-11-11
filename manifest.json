@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Button Remover",
+  "version": "1.0",
+  "description": "Tweetボタンを非表示にする拡張機能です。",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://x.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
